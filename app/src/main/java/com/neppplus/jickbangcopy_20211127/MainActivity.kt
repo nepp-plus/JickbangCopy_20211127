@@ -2,10 +2,27 @@ package com.neppplus.jickbangcopy_20211127
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.neppplus.jickbangcopy_20211127.datas.RoomData
 
 class MainActivity : AppCompatActivity() {
+
+    val mRoomList = ArrayList<RoomData>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        mRoomList.add(  RoomData(8000, "서울시 동대문구", 5, "1번째 방입니다.")  )
+        mRoomList.add(  RoomData(18000, "서울시 동대문구", 15, "2번째 방입니다.")  )
+        mRoomList.add(  RoomData(25700, "서울시 동대문구", 10, "3번째 방입니다.")  )
+        mRoomList.add(  RoomData(9700, "서울시 서대문구", 8, "4번째 방입니다.")  )
+        mRoomList.add(  RoomData(158000, "서울시 서대문구", -2, "5번째 방입니다.")  )
+        mRoomList.add(  RoomData(56000, "서울시 서대문구", -1, "6번째 방입니다.")  )
+        mRoomList.add(  RoomData(26000, "서울시 서대문구", 0, "7번째 방입니다.")  )
+        mRoomList.add(  RoomData(3000, "서울시 종로구", 5, "8번째 방입니다.")  )
+        mRoomList.add(  RoomData(79000, "서울시 종로구", -1, "9번째 방입니다.")  )
+        mRoomList.add(  RoomData(23500, "서울시 종로구", 0, "10번째 방입니다.")  )
+        mRoomList.add(  RoomData(17000, "서울시 종로구", 3, "11번째 방입니다.")  )
+
     }
 }
