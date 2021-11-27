@@ -1,5 +1,6 @@
 package com.neppplus.jickbangcopy_20211127.datas
 
+import java.io.Serializable
 import java.text.NumberFormat
 import java.util.*
 
@@ -10,7 +11,7 @@ class RoomData(
     val floor: Int,
     val description: String
 
-) {
+) : Serializable {
 
 //    방 데이터의 기능 :  가격을 가공해서 String으로 주는 기능. => 리스트뷰 / 상세화면 두군데에서 사용.
 
