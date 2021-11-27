@@ -9,6 +9,15 @@ class ViewRoomDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_room_detail)
+        setupEvents()
+        setValues()
+    }
+
+    fun setupEvents() {
+
+    }
+
+    fun setValues() {
 
         val roomData = intent.getSerializableExtra("room") as RoomData
 
@@ -18,6 +27,6 @@ class ViewRoomDetailActivity : AppCompatActivity() {
         txtAddress.text = roomData.address
         txtFloor.text = roomData.getFormattedFloor()
 
-
     }
+
 }
